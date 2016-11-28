@@ -1,0 +1,27 @@
+{
+  "name": "maya-calendar",
+  "version": "1.0.0",
+  "description": "An event calendar",
+  "main": "maya-calendar-admin.js",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/m1cl.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Michael Ajala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/m1cl/issues"
+  },
+  "homepage": "https://github.com/github.com/m1cl#readme"
+}

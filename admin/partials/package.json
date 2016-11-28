@@ -1,0 +1,19 @@
+{
+  "name": "maya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/scripts/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m1cl/maya-calendar.git"
+  },
+  "author": "Michael Ajala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m1cl/maya-calendar/issues"
+  },
+  "homepage": "https://github.com/m1cl/maya-calendar#readme"
+}
