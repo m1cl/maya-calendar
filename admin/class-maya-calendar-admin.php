@@ -71,7 +71,7 @@ class Maya_Calendar_Admin {
      * @return void
      */
     public function display_options_page() {
-        include_once 'partials/maya-calendar-admin-display.php';
+        include_once 'partials/index.html';
     }
 
 	/**
@@ -117,8 +117,25 @@ class Maya_Calendar_Admin {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/maya-calendar-admin.js', array( 'jquery' ), $this->version, false );
-        wp_enqueue_script( $this->plugin_name, plugin_dir_url(__FILE__) . 'js/bundle.js', array(''), $this->version, false);
+
+        /* if ( strpos( $_SERVER['REQUEST_URI'], 'plugins.php' ) !== false ) { */
+			/* return; */
+		/* } */
+
+        /* // If development use the Webpack dev server url. */
+        /* if ( defined( 'WP_ENV' ) && WP_ENV !== 'development' ) { */
+        /*     $path = plugins_url( './admin/partials/build/bundle.js', __DIR__ . '/../../../' ); */
+        /* } else { */
+        /*     $path = 'http://localhost.wordpress/partials/build/bundle.js'; */
+        /* } */
+        /* wp_enqueue_script( */
+        /*     'maya-calendar', */
+        /*     $path, */
+        /*     [], */
+        /*     '', */
+        /*     true */
+        /* ); */
+
 
 	}
-
 }
