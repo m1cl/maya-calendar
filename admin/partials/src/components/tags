@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+cancel	ToggleableEventButton.js	/^  cancel: {$/;"	p	class:const
+dataSource	InputComponent.js	/^      dataSource: [],$/;"	p	class:state
+deactivatedRange	DatePicker.js	/^      deactivatedRange: true,$/;"	p	class:state
+deselectOnClickaway	BookingTableComponent.js	/^      deselectOnClickaway: true,$/;"	p	class:state
+deselectOnClickaway	TableComponent.js	/^      deselectOnClickaway: true,$/;"	p	class:state
+disableYearSelection	DatePicker.js	/^      disableYearSelection: true,$/;"	p	class:state
+enableSelectAll	BookingTableComponent.js	/^      enableSelectAll: true,$/;"	p	class:state
+enableSelectAll	TableComponent.js	/^      enableSelectAll: true,$/;"	p	class:state
+fixedFooter	BookingTableComponent.js	/^      fixedFooter: true,$/;"	p	class:state
+fixedFooter	TableComponent.js	/^      fixedFooter: true,$/;"	p	class:state
+fixedHeader	BookingTableComponent.js	/^      fixedHeader: true,$/;"	p	class:state
+fixedHeader	TableComponent.js	/^      fixedHeader: true,$/;"	p	class:state
+headline	DashboardComponent.js	/^  headline: {$/;"	p	class:const
+height	BookingTableComponent.js	/^      height: '300px',$/;"	p	class:state
+height	TableComponent.js	/^      height: '300px',$/;"	p	class:state
+isOpen	ToggleableEventButton.js	/^		isOpen: false,$/;"	p	class:state
+marginRight	DatePicker.js	/^  marginRight: 'auto',$/;"	p	class:const
+maxDate	DatePicker.js	/^      maxDate: maxDate,$/;"	p	class:state
+maxWidth	DatePicker.js	/^  maxWidth: 255,$/;"	p	class:const
+minDate	DatePicker.js	/^      minDate: minDate,$/;"	p	class:state
+multiSelectable	BookingTableComponent.js	/^      multiSelectable: true,$/;"	p	class:state
+multiSelectable	TableComponent.js	/^      multiSelectable: true,$/;"	p	class:state
+propContainer	BookingTableComponent.js	/^  propContainer: {$/;"	p	class:const
+propContainer	TableComponent.js	/^  propContainer: {$/;"	p	class:const
+propContainer	TextFieldComponent.js	/^  propContainer: {$/;"	p	class:const
+selectable	BookingTableComponent.js	/^      selectable: true,$/;"	p	class:state
+selectable	TableComponent.js	/^      selectable: true,$/;"	p	class:state
+showCheckboxes	BookingTableComponent.js	/^      showCheckboxes: true,$/;"	p	class:state
+showCheckboxes	TableComponent.js	/^      showCheckboxes: true,$/;"	p	class:state
+showRowHover	BookingTableComponent.js	/^      showRowHover: false,$/;"	p	class:state
+showRowHover	TableComponent.js	/^      showRowHover: false,$/;"	p	class:state
+slideIndex	DashboardComponent.js	/^      slideIndex: 0,$/;"	p	class:state
+stripedRows	BookingTableComponent.js	/^      stripedRows: false,$/;"	p	class:state
+stripedRows	TableComponent.js	/^      stripedRows: false,$/;"	p	class:state
