@@ -13,7 +13,7 @@ Projektdokumentation
 ### Entwicklung einer CMS Erweiterung
 
 ---
-# ![](/home/m1cl/Downloads/maya_logo.png)
+# ![](https://github.com/m1cl/maya-calendar/blob/master/maya_logo.png)
 ---
 Inhaltsverzeichnis
 ==
