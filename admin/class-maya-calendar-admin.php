@@ -54,7 +54,7 @@ class Maya_Calendar_Admin {
 
 	}
     public function add_options_page() {
-        $this->plugin_screen_hook_suffix = add_options_page(
+        $this->plugin_screen_hook_suffix = add_menu_page(
             __('Maya Calendar Settings', 'maya-calendar'),
             __('Maya Calendar', 'maya-calendar'),
             'manage_options',
@@ -71,7 +71,7 @@ class Maya_Calendar_Admin {
      * @return void
      */
     public function display_options_page() {
-	include_once 'partials/index.html';
+        include_once 'partials/maya-calendar-admin-display.php';
     }
 
 	/**
@@ -104,36 +104,6 @@ class Maya_Calendar_Admin {
 	 */
 	public function enqueue_scripts() {
 
-    /**
-     * defer_enqueue_scripts
-     *
-     * @param mixed $tag        
-     * @param mixed $handle     = An unique specifier for a wordpress hook (e.g add_filter, add_action, euqueue_scripts,... etc.) 
-     * @param mixed $src        = URL to the script file
-     * @access public
-     * @return void
-     */
-    function defer_enqueue_scripts($tag, $handle, $src) {
-
-        /**
-         * specify the target ($handle) that should be modified by wordpress  
-         */
-        $defer_scripts = array(
-            'main-maya-script'
-        );
-
-        /**
-         * checks if an $handle is listed in the array.
-         */
-        if(in_array($handle, $defer_scripts) ) {
-            /**
-             * it modifies the script tag to babel(javascript transformer) , so it can be executed by the browser
-             */
-            return '<script type="text/babel" src="' . $src . '"></script>' . "\n";
-        }
-        return $tag;
-    }
-
 		/**
 		 * This function is provided for demonstration purposes only.
 		 *
@@ -146,24 +116,9 @@ class Maya_Calendar_Admin {
 		 * class.
 		 */
 
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/maya-calendar-admin.js', array( 'jquery' ), $this->version, false );
+        wp_enqueue_script( $this->plugin_name, plugin_dir_url(__FILE__) . 'js/bundle.js', array(''), $this->version, false);
 
-		wp_enqueue_script( 'maya-bundle-script', plugin_dir_url( __FILE__ ) . 'partials/dist/bundle.js' );
-		wp_enqueue_script( 'react', plugin_dir_url( __FILE__ ) . 'js/react.min.js' );
-		wp_enqueue_script( 'react-dom', plugin_dir_url( __FILE__ ) . 'js/react-dom.min.js' );
-		wp_enqueue_script( 'main-maya-script', plugin_dir_url( __FILE__ ) . 'partials/src/maya-calendar-admin-display.js' );
-		wp_enqueue_script( 'main-maya-script', plugin_dir_url( __FILE__ ) . 'partials/src/maya-calendar-admin-display.js' );
-
-        /**
-             Main admin application scirpt added to wordpress
-         */
-		wp_register_script( 'main-maya-script', plugin_dir_url( __FILE__ ) . 'partials/src/maya-calendar-admin-display.js','',1.1,true );
-        /* Add filter to script */
-
-        /**
-         * this function tell us that this code should run anytime an enqueued script is about to be printed onto the page as an HTML script
-         * element. Letting us filter that HTML is what 'script_loader_tag' is for. 
-         */ 
-        add_filter( 'script_loader_tag','defer_enqueue_scripts', 10, 3);
 	}
-}	
 
+}
