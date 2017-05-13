@@ -1,0 +1,20 @@
+{
+  "vim": {
+    "keys": {
+      "break"    : "C-p",
+      "continue" : "C-c",
+      "down"     : "C-d",
+      "in"       : "C-i",
+      "next"     : "C-n",
+      "out"      : "C-o",
+      "up"       : "C-u"
+    }
+  },
+  "agent": {
+    "port": 3000
+  },
+  "debugger": {
+    "port": 3000
+  },
+  "windowmanager": ""
+}

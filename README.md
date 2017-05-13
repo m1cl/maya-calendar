@@ -1,17 +1,10 @@
-<!-- $theme: default -->
-<!-- $size: 16:9 -->
-<!-- $width: 22in -->
-<!-- $height: 22in -->
+# Maya Calendar - Michael Ajala Abschlussprojekt
 
-
-Projektdokumentation 
-==
-
-#### Michael Ajala 
-
-###### Ausbildungsberuf: Fachinformatiker für Anwendungsentwicklung
-### Entwicklung einer CMS Erweiterung
-
----
-# ![](https://github.com/m1cl/maya-calendar/blob/master/maya_logo.png)
----
+- Aufbereitung der Ordnerstruktur 
+- Einlesen in die Wordpress-Plugin Entwicklung
+- Erstellung des Icons 
+- Passende Framework suchen für den Adminstrationsbereich
+- Anpassung des Admin-Breichs
+- Erstellung der Widget Klasse
+- Einbindung des Plugins
+# maya-calendar
