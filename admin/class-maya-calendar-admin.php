@@ -54,7 +54,7 @@ class Maya_Calendar_Admin {
 
 	}
     public function add_options_page() {
-        $this->plugin_screen_hook_suffix = add_options_page(
+        $this->plugin_screen_hook_suffix = add_menu_page(
             __('Maya Calendar Settings', 'maya-calendar'),
             __('Maya Calendar', 'maya-calendar'),
             'manage_options',
